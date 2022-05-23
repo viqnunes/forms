@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./form/assets/stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css"/>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <h2>Área de cadastro</h2>
+    <form action="paginas/dados.html" method="POST" id="campo1">
+      <input type="text" name="nome"/>
+      <input type="email" name="email"/>
+      <input type="tel" name="tel"/>
+      <input type="text" name="cidade"/>
+      <input type="checkbox" name="info"/>
+      <input type="submit"/>
+    </form>
+<h2>Área de cadastro 2</h2>
+<div class="mensagem"></div>
+    <form action="paginas/dados.html" method="POST" id="campo2">
+
+      <input type="text" placeholder="nome" class="obrigatorio" name="nome"/>
+      <input type="text" placeholder="email" name="email"/>
+      <input type="text" placeholder="celular" class="numero" name="tel"/>
+      <input type="text" placeholder="cidade" class="uf" name="cidade"/>
+
+      <input type="checkbox" name="info"/>
+
+      <button type="submit">enviar</button>
+    </form>
+
+
+    <script type="text/javascript" src="./form/assets/script.js"></script>
+
+  </body>
+</html>
