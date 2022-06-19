@@ -1,3 +1,28 @@
+body {
+    background-color: #d8eefe;
+    color: #5f6c7b;
+}
+
+form {
+    background-color: #fffffe;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    padding: .5em;
+    width: 80%;
+    margin: 2em;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main {
+    display: flex;
+}
+
 .mensagem {
     font-size: 2rem;
     text-align: center;
@@ -5,5 +30,5 @@
 }
 
 .erro {
-    border-color: #f00;
+    border-color: #ef4565;
 }

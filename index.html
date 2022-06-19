@@ -9,6 +9,7 @@
     <title>Formulário</title>
   </head>
   <body>
+    <section id="main">
     <h1>Formulário</h1>
     <h2>Área de cadastro</h2>
     <form action="paginas/dados.html" method="POST" id="campo1">
@@ -20,19 +21,22 @@
       <input type="submit"/>
     </form>
 <h2>Área de cadastro 2</h2>
-<div class="mensagem"></div>
     <form action="paginas/dados.html" method="POST" id="campo2">
 
-      <input type="text" placeholder="nome" class="obrigatorio" name="nome"/>
-      <input type="text" placeholder="email" class="obrigatorio email" name="email"/>
-      <input type="text" placeholder="celular" class="numero" name="tel"/>
-      <input type="text" placeholder="cidade" class="uf" name="cidade"/>
+      <input type="text" placeholder="Nome" class="obrigatorio" name="nome"/>
+      <input type="text" placeholder="E-mail" class="obrigatorio email" name="email"/>
+      <input type="text" placeholder="Telefone" class="numero" name="tel"/>
+
+      <input type="text" placeholder="CEP" class="cep" name="cep"/>
+      
+      <input type="text" placeholder="Cidade" class="obrigatorio" name="cidade"/>
+      <input type="text" placeholder="UF" class="uf" name="uf"/>
 
       <input type="checkbox" name="info"/>
-
+      <div class="mensagem"></div>
       <button type="submit">enviar</button>
     </form>
-
+    </section>
 
     <script type="text/javascript" src="../forms/assets/script.js"></script>
 
