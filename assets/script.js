@@ -3,7 +3,7 @@ function validaCampo(elemento) {
         event.preventDefault();
 
         if(this.value == "") {
-            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento do campo Nome";
+            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento do campo";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
