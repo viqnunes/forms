@@ -1,34 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,300&display=swap');
+
 body {
-    background-color: #d8eefe;
-    color: #5f6c7b;
+  background-color: #fec7d7;
+  color: #5f6c7b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    padding: .5em 0em;
+    color: #0e172c;
+    font-family: 'DM Mono', monospace;
+}
+
+.sub-base {
+  margin: 0 auto 10px auto;
+  width: 80%;
+  background-color: #fffffe;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 form {
-    background-color: #fffffe;
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: center;
+  justify-content: center;
 }
 
 input {
-    padding: .5em;
-    width: 80%;
-    margin: 2em;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
+  background-color: #f1f1f1;
+  border: 1px solid #e4e4e4;
+  padding: 0.6em;
+  width: 98%;
+  margin: 1em 0 1em 0;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #a786df;
+  width: 100px;
+  padding: 8px;
+  border: none;
+  float: right;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 #main {
-    display: flex;
+  display: block;
+  margin: 10px;
 }
 
 .mensagem {
-    font-size: 2rem;
-    text-align: center;
-    padding: 2rem;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  text-align: left;
+  color: #ef4545;
+  font-weight: bold;
+  float: left;
+  display: block;
+  overflow: hidden;
 }
 
 .erro {
-    border-color: #ef4565;
+  border-color: #ef4545;
 }

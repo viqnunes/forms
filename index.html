@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../forms/assets/stylesheet.css"/>
-    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css"/>
-    <title>Formulário</title>
-  </head>
-  <body>
-    <section id="main">
-    <h1>Formulário</h1>
-    <h2>Área de cadastro</h2>
-    <form action="paginas/dados.html" method="POST" id="campo1">
-      <input type="text" name="nome"/>
-      <input type="email" name="email"/>
-      <input type="tel" name="tel"/>
-      <input type="text" name="cidade"/>
-      <input type="checkbox" name="info"/>
-      <input type="submit"/>
-    </form>
-<h2>Área de cadastro 2</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../forms/assets/stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <title>Formulário</title>
+</head>
+
+<body>
+
+  <section id="main">
+  <h1 class="titulo">forms</h1>
+    <article class="sub-base">
     <form action="paginas/dados.html" method="POST" id="campo2">
+      <fieldset>
+        <legend>Formulário com validação via Javascript e utilizando RegEx.</legend>
+        <input type="text" placeholder="Nome" class="obrigatorio" name="nome" required>
+        <input type="text" placeholder="E-mail" class="obrigatorio email" name="email" required>
+        <input type="text" placeholder="Telefone ou celular" class="numero" name="tel" required>
+        <input type="text" placeholder="CEP" class="cep" name="cep" required>
+        <input type="text" placeholder="Cidade" class="obrigatorio" name="cidade" required>
+        <input type="text" placeholder="UF" class="uf" name="uf" required>
 
-      <input type="text" placeholder="Nome" class="obrigatorio" name="nome"/>
-      <input type="text" placeholder="E-mail" class="obrigatorio email" name="email"/>
-      <input type="text" placeholder="Telefone" class="numero" name="tel"/>
-
-      <input type="text" placeholder="CEP" class="cep" name="cep"/>
-      
-      <input type="text" placeholder="Cidade" class="obrigatorio" name="cidade"/>
-      <input type="text" placeholder="UF" class="uf" name="uf"/>
-
-      <input type="checkbox" name="info"/>
-      <div class="mensagem"></div>
-      <button type="submit">enviar</button>
+        <div class="mensagem"></div>
+        <button type="submit" class="button">enviar</button>
+      </fieldset>
     </form>
-    </section>
+    </article>
+  </section>
 
-    <script type="text/javascript" src="../forms/assets/script.js"></script>
+  <script type="text/javascript" src="../forms/assets/script.js"></script>
+</body>
 
-  </body>
 </html>

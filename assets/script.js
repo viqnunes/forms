@@ -3,7 +3,7 @@ function validaCampo(elemento) {
         event.preventDefault();
 
         if(this.value == "") {
-            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em vermelho";
+            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento do campo Nome";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -25,7 +25,7 @@ function validaUF(elemento) {
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento do campo em destaque.";
+            document.querySelector('.mensagem').innerHTML = "Digite sua UF apenas com 2 dígitos. Ex.: RJ";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -43,7 +43,7 @@ function validaCEP(elemento) {
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em destaque.";
+            document.querySelector('.mensagem').innerHTML = "Número de CEP inválido.";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -61,7 +61,7 @@ function validaEmail(elemento) {
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em destaque.";
+            document.querySelector('.mensagem').innerHTML = "Por favor, verifique se o e-mail foi digitado corretamente.";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
@@ -80,7 +80,7 @@ function validaCampoNumerico(elemento) {
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
         } else {
-            document.querySelector('.mensagem').innerHTML = "Verifique o preenchimento dos campos em destaque.";
+            document.querySelector('.mensagem').innerHTML = "Número de telefone/celular inválido.";
             this.classList.add('erro');
             this.parentNode.classList.add('erro');
             return false;
